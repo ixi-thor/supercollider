@@ -313,7 +313,7 @@ SynthDef( \help_SPE3_Mridangam, { arg t_amp;
 		4
 	).distort * 0.4;
 
-	Out.ar( 0, out );
+	Out.ar( 0, out!2 );
 	DetectSilence.ar( out, doneAction: 2 );
 }).add;
 
